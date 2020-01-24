@@ -1,8 +1,8 @@
-z12_s_src = files(['server.cpp'])
+z12_c_src = files(['client.cpp'])
 executable(
-	'echo1',
+	'client',
 	include_directories: src,
-	sources: z12_s_src,
+	sources: z12_c_src,
 	dependencies: [],
 	install: true
 )

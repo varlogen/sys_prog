@@ -26,7 +26,7 @@ rule CUSTOM_COMMAND
  restat = 1
 
 rule REGENERATE_BUILD
- command = /home/pavel/.local/bin/meson --internal regenerate /home/pavel/spbu/sys_prog/z12 /home/pavel/spbu/sys_prog/z12/build --backend ninja
+ command = /home/pavel/.local/bin/meson --internal regenerate /home/pavel/spbu/sys_prog_/z12 /home/pavel/spbu/sys_prog_/z12/build --backend ninja
  description = Regenerating build files.
  generator = 1
 
@@ -43,18 +43,18 @@ build src/echo1/f6a2334@@echo1@exe/server.cpp.o: cpp_COMPILER ../src/echo1/serve
 build src/echo1/echo1: cpp_LINKER src/echo1/f6a2334@@echo1@exe/server.cpp.o
  LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
 
-build src/echo1/f6a2334@@client@exe/client.cpp.o: cpp_COMPILER ../src/echo1/client.cpp
- DEPFILE = src/echo1/f6a2334@@client@exe/client.cpp.o.d
- ARGS = -Isrc/echo1/f6a2334@@client@exe -Isrc/echo1 -I../src/echo1 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g
-
-build src/echo1/client: cpp_LINKER src/echo1/f6a2334@@client@exe/client.cpp.o
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
-
 build src/echo2/d6b2456@@echo2@exe/Server.cpp.o: cpp_COMPILER ../src/echo2/Server.cpp
  DEPFILE = src/echo2/d6b2456@@echo2@exe/Server.cpp.o.d
  ARGS = -Isrc/echo2/d6b2456@@echo2@exe -Isrc/echo2 -I../src/echo2 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g
 
 build src/echo2/echo2: cpp_LINKER src/echo2/d6b2456@@echo2@exe/Server.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
+
+build src/client/f537023@@client@exe/client.cpp.o: cpp_COMPILER ../src/client/client.cpp
+ DEPFILE = src/client/f537023@@client@exe/client.cpp.o.d
+ ARGS = -Isrc/client/f537023@@client@exe -Isrc/client -I../src/client -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g
+
+build src/client/client: cpp_LINKER src/client/f537023@@client@exe/client.cpp.o
  LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
 
 # Test rules
@@ -97,7 +97,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony src/echo1/echo1 src/echo1/client src/echo2/echo2
+build all: phony src/echo1/echo1 src/echo2/echo2 src/client/client
 
 build clean: phony meson-clean
 
@@ -105,13 +105,13 @@ build meson-clean: CUSTOM_COMMAND PHONY
  COMMAND = /home/pavel/.local/bin/ninja -t clean
  description = Cleaning.
 
-build build.ninja: REGENERATE_BUILD ../meson.build ../src/meson.build ../src/echo1/meson.build ../src/echo2/meson.build meson-private/coredata.dat
+build build.ninja: REGENERATE_BUILD ../meson.build ../src/meson.build ../src/echo1/meson.build ../src/echo2/meson.build ../src/client/meson.build meson-private/coredata.dat
  pool = console
 
 build reconfigure: REGENERATE_BUILD PHONY
  pool = console
 
-build ../meson.build ../src/meson.build ../src/echo1/meson.build ../src/echo2/meson.build meson-private/coredata.dat: phony 
+build ../meson.build ../src/meson.build ../src/echo1/meson.build ../src/echo2/meson.build ../src/client/meson.build meson-private/coredata.dat: phony 
 
 default all
 

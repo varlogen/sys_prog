@@ -1,16 +1,42 @@
-Build started at 2020-01-23T20:13:33.859499
+Build started at 2020-01-24T01:41:01.794177
 Main binary: /usr/bin/python3
-Build Options: -Dbackend=ninja
+Build Options: 
 Python system: Linux
 The Meson build system
 Version: 0.53.0
-Source dir: /home/pavel/spbu/sys_prog/z12
-Build dir: /home/pavel/spbu/sys_prog/z12/build
+Source dir: /home/pavel/spbu/sys_prog_/z12
+Build dir: /home/pavel/spbu/sys_prog_/z12/build
 Build type: native build
 Project name: z12
 Project version: 0.1.0
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.cc -o /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the build machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 C++ linker for the build machine: c++ GNU ld.bfd 2.30
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.cc -o /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 C++ linker for the host machine: c++ GNU ld.bfd 2.30
 Build machine cpu family: x86_64
@@ -23,8 +49,8 @@ Build targets in project: 3
 
 Found ninja-1.9.0.git.kitware.dyndep-1.jobserver-1 at /home/pavel/.local/bin/ninja
 Running compile:
-Working directory:  /tmp/tmpmvsn3z54
-Command line:  c++ /tmp/tmpmvsn3z54/testfile.cpp -o /tmp/tmpmvsn3z54/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++17 
+Working directory:  /tmp/tmp1_pvlsjz
+Command line:  c++ /tmp/tmp1_pvlsjz/testfile.cpp -o /tmp/tmp1_pvlsjz/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++17 
 
 Code:
  int i = static_cast<int>(0);
@@ -34,8 +60,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++17: YES
 Running compile:
-Working directory:  /home/pavel/spbu/sys_prog/z12/build/meson-private/tmp0569pv60
-Command line:  c++ /home/pavel/spbu/sys_prog/z12/build/meson-private/tmp0569pv60/testfile.cpp -o /home/pavel/spbu/sys_prog/z12/build/meson-private/tmp0569pv60/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/pavel/spbu/sys_prog_/z12/build/meson-private/tmpclm1x1mv
+Command line:  c++ /home/pavel/spbu/sys_prog_/z12/build/meson-private/tmpclm1x1mv/testfile.cpp -o /home/pavel/spbu/sys_prog_/z12/build/meson-private/tmpclm1x1mv/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
