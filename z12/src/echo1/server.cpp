@@ -9,7 +9,6 @@
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 #define DEFAULT_PORT 8080
 #define MAX_CONN 16
@@ -81,48 +80,30 @@ void server_run()
 
 	socklen = sizeof(cli_addr);
 
-	int client_count = 0;
-
-  	time_t start, end;
-	time(&start);
-	client_count = 0;
-
 	for (;;)
 	{
-		time(&end);
-		double seconds = difftime(end, start);
-		if(seconds >= 1.0)
-		{
-			printf("clients: %d per second\n", client_count);
-			time(&start);
-			client_count = 0;
-		}
 		nfds = epoll_wait(epfd, events, MAX_EVENTS, -1);
 		for (i = 0; i < nfds; i++)
 		{
 			if (events[i].data.fd == listen_sock)
 			{
-				/* handle new connection */
 				conn_sock =
 					accept(listen_sock,
 						   (struct sockaddr *)&cli_addr,
 						   &socklen);
 
-				client_count++;
-
 				inet_ntop(AF_INET, (char *)&(cli_addr.sin_addr),
 						  buf, sizeof(cli_addr));
-				printf("[+] connected with %s:%d\n", buf,
+				printf("connected with %s:%d\n", buf,
 					   ntohs(cli_addr.sin_port));
 
 				setnonblocking(conn_sock);
 				epoll_ctl_add(epfd, conn_sock,
 							  EPOLLIN | EPOLLET | EPOLLRDHUP |
-								  EPOLLHUP);
+							  EPOLLHUP);
 			}
 			else if (events[i].events & EPOLLIN)
 			{
-				/* handle EPOLLIN event */
 				for (;;)
 				{
 					bzero(buf, sizeof(buf));
@@ -134,7 +115,6 @@ void server_run()
 					}
 					else
 					{
-						//printf("[+] data: %s\n", buf);
 						send(events[i].data.fd, buf,
 							 strlen(buf), 0);
 						break;

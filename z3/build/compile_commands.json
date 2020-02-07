@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z3/build",
+    "command": "c++  -Isrc/z3/z3@exe -Isrc/z3 -I../src/z3 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -MD -MQ 'src/z3/z3@exe/main.cpp.o' -MF 'src/z3/z3@exe/main.cpp.o.d' -o 'src/z3/z3@exe/main.cpp.o' -c ../src/z3/main.cpp",
+    "file": "../src/z3/main.cpp"
+  },
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z3/build",
+    "command": "c++  -Itest/functions_test@exe -Itest -I../test -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread -MD -MQ 'test/functions_test@exe/functions_test.cpp.o' -MF 'test/functions_test@exe/functions_test.cpp.o.d' -o 'test/functions_test@exe/functions_test.cpp.o' -c ../test/functions_test.cpp",
+    "file": "../test/functions_test.cpp"
+  }
+]

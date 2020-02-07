@@ -1,74 +1,14 @@
-Build started at 2020-01-24T01:41:01.794177
+Build started at 2020-02-03T16:00:09.648827
 Main binary: /usr/bin/python3
-Build Options: 
 Python system: Linux
 The Meson build system
-Version: 0.53.0
-Source dir: /home/pavel/spbu/sys_prog_/z12
-Build dir: /home/pavel/spbu/sys_prog_/z12/build
+Version: 0.45.1
+Source dir: /home/varlogen/spbu/sys_prog/z12
+Build dir: /home/varlogen/spbu/sys_prog/z12/build
 Build type: native build
 Project name: z12
-Project version: 0.1.0
-No CXXFLAGS in the environment, not changing global flags.
-No LDFLAGS in the environment, not changing global flags.
-No CPPFLAGS in the environment, not changing global flags.
-Sanity testing C++ compiler: c++
-Is cross compiler: False.
-Sanity check compiler command line: c++ /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.cc -o /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe
-C++ compiler for the build machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
-C++ linker for the build machine: c++ GNU ld.bfd 2.30
-No CXXFLAGS in the environment, not changing global flags.
-No LDFLAGS in the environment, not changing global flags.
-No CPPFLAGS in the environment, not changing global flags.
-Sanity testing C++ compiler: c++
-Is cross compiler: False.
-Sanity check compiler command line: c++ /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.cc -o /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/pavel/spbu/sys_prog_/z12/build/meson-private/sanitycheckcpp.exe
-C++ compiler for the host machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
-C++ linker for the host machine: c++ GNU ld.bfd 2.30
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
-Host machine cpu family: x86_64
-Host machine cpu: x86_64
-Target machine cpu family: x86_64
-Target machine cpu: x86_64
-Build targets in project: 3
-
-Found ninja-1.9.0.git.kitware.dyndep-1.jobserver-1 at /home/pavel/.local/bin/ninja
-Running compile:
-Working directory:  /tmp/tmp1_pvlsjz
-Command line:  c++ /tmp/tmp1_pvlsjz/testfile.cpp -o /tmp/tmp1_pvlsjz/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++17 
-
-Code:
- int i = static_cast<int>(0);
-Compiler stdout:
- 
-Compiler stderr:
- 
-Compiler accepts -std=c++17: YES
-Running compile:
-Working directory:  /home/pavel/spbu/sys_prog_/z12/build/meson-private/tmpclm1x1mv
-Command line:  c++ /home/pavel/spbu/sys_prog_/z12/build/meson-private/tmpclm1x1mv/testfile.cpp -o /home/pavel/spbu/sys_prog_/z12/build/meson-private/tmpclm1x1mv/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
-
-Code:
- 
-Compiler stdout:
- install: /usr/lib/gcc/x86_64-linux-gnu/7/
-programs: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/
-libraries: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/7/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/7/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-
-Compiler stderr:
- 
+Build targets in project: 4
+Found ninja-1.8.2 at /usr/bin/ninja

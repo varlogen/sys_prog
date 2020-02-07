@@ -1,0 +1,51 @@
+Build started at 2020-02-03T17:41:22.237789
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.45.1
+Source dir: /home/varlogen/spbu/sys_prog/z3
+Build dir: /home/varlogen/spbu/sys_prog/z3/build
+Build type: native build
+meson.build:1: WARNING: Passed invalid keyword argument "deafult_options".
+WARNING: This will become a hard error in the future.
+Project name: z3
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/varlogen/spbu/sys_prog/z3/build/meson-private/sanitycheckcpp.cc -o /home/varlogen/spbu/sys_prog/z3/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/varlogen/spbu/sys_prog/z3/build/meson-private/sanitycheckcpp.exe
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+src/z3/meson.build:2: WARNING: Passed invalid keyword argument "dependecies".
+WARNING: This will become a hard error in the future.
+WARNING: Unknown keyword argument(s) in target z3: dependecies.
+Running compile:
+Working directory:  /tmp/tmp8na6rbdk
+Command line:  c++ /tmp/tmp8na6rbdk/testfile.cpp -O0 -fpermissive -Wl,--start-group -lgtest -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp8na6rbdk/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpl8bwayct
+Command line:  c++ /tmp/tmpl8bwayct/testfile.cpp -O0 -fpermissive -Wl,--start-group -lgtest_main -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpl8bwayct/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Dependency GTest found: YES (prebuilt)
+Adding test "functions".
+Build targets in project: 2
+Found ninja-1.8.2 at /usr/bin/ninja

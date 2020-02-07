@@ -27,7 +27,6 @@ int main()
     int sockfd;
     char buf[MAX_LINE];
     struct sockaddr_in srv_addr;
-    const char *message = "hello";
 
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
 
@@ -41,14 +40,13 @@ int main()
 
     for (;;)
     {
-        /*
         printf("input: ");
         fgets(buf, sizeof(buf), stdin);
         c = strlen(buf) - 1;
         buf[c] = '\0';
         write(sockfd, buf, c + 1);
-        */
-        write(sockfd, message, strlen(message));
+
+        write(sockfd, buf, strlen(buf));
 
         bzero(buf, sizeof(buf));
         while (errno != EAGAIN && (n = read(sockfd, buf, sizeof(buf))) > 0)
@@ -63,5 +61,6 @@ int main()
             }
         }
     }
+
     close(sockfd);
 }

@@ -1,0 +1,5 @@
+# ninja log v5
+0	407	1580740890	src/z3/z3@exe/main.cpp.o	1c4e0fd97b0cfa1c
+1	108	1580740916	src/z3/z3	7dc193109e1e34cc
+1	1068	1580740949	test/functions_test@exe/functions_test.cpp.o	d9d16ded8e84492c
+1068	1257	1580740949	test/functions_test	77ed3052b6abfa2a
