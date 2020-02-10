@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z2/build",
+    "command": "c++  -Isrc/vector/vector@exe -Isrc/vector -I../src/vector -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O0 -g -MD -MQ 'src/vector/vector@exe/main.cpp.o' -MF 'src/vector/vector@exe/main.cpp.o.d' -o 'src/vector/vector@exe/main.cpp.o' -c ../src/vector/main.cpp",
+    "file": "../src/vector/main.cpp"
+  }
+]
