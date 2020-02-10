@@ -1,0 +1,5 @@
+# ninja log v5
+0	28	1581275481	src/z10/z10@exe/main.cpp.o	d722279c05d85975
+28	67	1581275481	src/z10/z10	5bb4b9c08a35c521
+1	1094	1581275482	test/rotate_test@exe/rotate_test.cpp.o	8270fe9ea66616db
+1095	1284	1581275483	test/rotate_test	78e8c5d407e2feeb

@@ -9,7 +9,7 @@
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <time.h>
-#include <stdio.h> 
+#include <stdio.h>
 
 #define DEFAULT_PORT 8080
 
@@ -25,12 +25,12 @@ int main()
 {
     int n = 1000;
     int sockfd[n];
-    struct sockaddr_in srv_addr; 
+    struct sockaddr_in srv_addr;
     time_t start, end;
-      
+
     time(&start);
     for (int i = 0; i < n; i++)
-    {   
+    {
         sockfd[i] = socket(AF_INET, SOCK_STREAM, 0);
 
         set_sockaddr(&srv_addr);
@@ -38,9 +38,9 @@ int main()
         if (connect(sockfd[i], (struct sockaddr *)&srv_addr, sizeof(srv_addr)) < 0)
         {
             perror("connect()");
-            return(1);
+            return (1);
         }
-    } 
+    }
     time(&end);
 
     double seconds = (double)(n / difftime(end, start));

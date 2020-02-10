@@ -1,0 +1,19 @@
+Build started at 2020-02-10T13:41:27.728347
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.45.1
+Source dir: /home/varlogen/spbu/sys_prog/z9
+Build dir: /home/varlogen/spbu/sys_prog/z9/build
+Build type: native build
+Project name: z5
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Dependency gtest found: YES (cached)
+Adding test "functions".
+Configuring Doxyfile using configuration
+Program doxygen found: YES (/usr/bin/doxygen)
+Message: Doxygen found
+Build targets in project: 4
+Found ninja-1.8.2 at /usr/bin/ninja

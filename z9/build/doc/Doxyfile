@@ -1,0 +1,5 @@
+PROJECT_NAME = "z9"
+OUTPUT_DIRECTORY = /home/varlogen/spbu/sys_prog/z9/build
+RECURSIVE = YES
+GENERATE_LATEX = NO
+INPUT = ../src/z9

@@ -90,7 +90,7 @@ int main()
                     written += n;
                 }
             }
-		    printf("[+] connection closed\n");
+            printf("[+] connection closed\n");
         }
     }
 

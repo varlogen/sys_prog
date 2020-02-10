@@ -1,0 +1,24 @@
+Build started at 2020-02-09T19:38:52.336185
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.45.1
+Source dir: /home/varlogen/spbu/sys_prog/z5
+Build dir: /home/varlogen/spbu/sys_prog/z5/build
+Build type: native build
+Project name: z5
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/varlogen/spbu/sys_prog/z5/build/meson-private/sanitycheckcpp.cc -o /home/varlogen/spbu/sys_prog/z5/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/varlogen/spbu/sys_prog/z5/build/meson-private/sanitycheckcpp.exe
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Build targets in project: 1
+Found ninja-1.8.2 at /usr/bin/ninja

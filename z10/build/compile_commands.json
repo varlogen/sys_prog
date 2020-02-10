@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z10/build",
+    "command": "c++  -Isrc/z10/z10@exe -Isrc/z10 -I../src/z10 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g -MD -MQ 'src/z10/z10@exe/main.cpp.o' -MF 'src/z10/z10@exe/main.cpp.o.d' -o 'src/z10/z10@exe/main.cpp.o' -c ../src/z10/main.cpp",
+    "file": "../src/z10/main.cpp"
+  },
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z10/build",
+    "command": "c++  -Itest/rotate_test@exe -Itest -I../test -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g -pthread -MD -MQ 'test/rotate_test@exe/rotate_test.cpp.o' -MF 'test/rotate_test@exe/rotate_test.cpp.o.d' -o 'test/rotate_test@exe/rotate_test.cpp.o' -c ../test/rotate_test.cpp",
+    "file": "../test/rotate_test.cpp"
+  }
+]

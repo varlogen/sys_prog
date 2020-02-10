@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z5/build",
+    "command": "c++  -Isrc/z5/z5@exe -Isrc/z5 -I../src/z5 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g -MD -MQ 'src/z5/z5@exe/main.cpp.o' -MF 'src/z5/z5@exe/main.cpp.o.d' -o 'src/z5/z5@exe/main.cpp.o' -c ../src/z5/main.cpp",
+    "file": "../src/z5/main.cpp"
+  }
+]

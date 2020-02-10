@@ -1,0 +1,22 @@
+# ninja log v5
+1	518	1581331234	src/z9/z2@exe/vector.cpp.o	ea1790c41ec14949
+519	595	1581331234	src/z9/z2	10a7b18373370fcd
+0	694	1581331234	src/z9/z5@exe/main.cpp.o	85aa90bf357f09cf
+694	760	1581331234	src/z9/z5	44fa0fc07288cd49
+1	778	1581331234	src/test/functions_test@exe/functions_test.cpp.o	110a676cb9e3706a
+778	894	1581331234	src/test/functions_test	afeda9247ee0279b
+0	373	0	meson-doc	99009742b8a1f982
+0	269	1581331287	build.ninja	65280d5535fdcc3f
+0	419	0	meson-doc	99009742b8a1f982
+0	323	0	meson-doc	99009742b8a1f982
+0	440	0	meson-doc	99009742b8a1f982
+1	674	1581331367	src/test/functions_test@exe/functions_test.cpp.o	110a676cb9e3706a
+674	782	1581331367	src/test/functions_test	afeda9247ee0279b
+0	431	0	meson-doc	99009742b8a1f982
+3	1554	1581331605	src/test/functions_test@exe/functions_test.cpp.o	110a676cb9e3706a
+1554	1862	1581331605	src/test/functions_test	afeda9247ee0279b
+0	802	0	meson-doc	99009742b8a1f982
+1	1194	1581334254	src/test/functions_test@exe/functions_test.cpp.o	110a676cb9e3706a
+1194	1375	1581334254	src/test/functions_test	afeda9247ee0279b
+0	597	0	meson-doc	99009742b8a1f982
+0	597	0	meson-doc	99009742b8a1f982

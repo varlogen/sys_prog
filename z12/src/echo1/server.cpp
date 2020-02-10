@@ -100,7 +100,7 @@ void server_run()
 				setnonblocking(conn_sock);
 				epoll_ctl_add(epfd, conn_sock,
 							  EPOLLIN | EPOLLET | EPOLLRDHUP |
-							  EPOLLHUP);
+								  EPOLLHUP);
 			}
 			else if (events[i].events & EPOLLIN)
 			{

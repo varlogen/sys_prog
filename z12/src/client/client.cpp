@@ -35,7 +35,7 @@ int main()
     if (connect(sockfd, (struct sockaddr *)&srv_addr, sizeof(srv_addr)) < 0)
     {
         perror("connect()");
-        return(1);
+        return (1);
     }
 
     for (;;)

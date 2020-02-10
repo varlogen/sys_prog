@@ -1,0 +1,17 @@
+[
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z9/build",
+    "command": "c++  -Isrc/z9/z5@exe -Isrc/z9 -I../src/z9 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g -MD -MQ 'src/z9/z5@exe/main.cpp.o' -MF 'src/z9/z5@exe/main.cpp.o.d' -o 'src/z9/z5@exe/main.cpp.o' -c ../src/z9/main.cpp",
+    "file": "../src/z9/main.cpp"
+  },
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z9/build",
+    "command": "c++  -Isrc/z9/z2@exe -Isrc/z9 -I../src/z9 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g -MD -MQ 'src/z9/z2@exe/vector.cpp.o' -MF 'src/z9/z2@exe/vector.cpp.o.d' -o 'src/z9/z2@exe/vector.cpp.o' -c ../src/z9/vector.cpp",
+    "file": "../src/z9/vector.cpp"
+  },
+  {
+    "directory": "/home/varlogen/spbu/sys_prog/z9/build",
+    "command": "c++  -Isrc/test/functions_test@exe -Isrc/test -I../src/test -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g -pthread -MD -MQ 'src/test/functions_test@exe/functions_test.cpp.o' -MF 'src/test/functions_test@exe/functions_test.cpp.o.d' -o 'src/test/functions_test@exe/functions_test.cpp.o' -c ../src/test/functions_test.cpp",
+    "file": "../src/test/functions_test.cpp"
+  }
+]
