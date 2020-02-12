@@ -36,12 +36,10 @@ int main()
         return -1;
     }
 
-    cout << "Socked num: " << sock_fd << endl;
     char buf[100];
 
     while (true)
     {
-        cout << "Will accept" << endl;
         int conn = accept(sock_fd, 0, 0);
         if (conn < 0)
         {

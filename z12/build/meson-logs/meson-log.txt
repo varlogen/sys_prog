@@ -1,4 +1,4 @@
-Build started at 2020-02-03T16:00:09.648827
+Build started at 2020-02-12T14:03:25.785415
 Main binary: /usr/bin/python3
 Python system: Linux
 The Meson build system
@@ -7,6 +7,16 @@ Source dir: /home/varlogen/spbu/sys_prog/z12
 Build dir: /home/varlogen/spbu/sys_prog/z12/build
 Build type: native build
 Project name: z12
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/varlogen/spbu/sys_prog/z12/build/meson-private/sanitycheckcpp.cc -o /home/varlogen/spbu/sys_prog/z12/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/varlogen/spbu/sys_prog/z12/build/meson-private/sanitycheckcpp.exe
 Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 Build machine cpu family: x86_64
 Build machine cpu: x86_64

@@ -67,11 +67,11 @@ build src/echo1/echo1@exe/server.cpp.o: cpp_COMPILER ../src/echo1/server.cpp
 build src/echo1/echo1: cpp_LINKER src/echo1/echo1@exe/server.cpp.o
  LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed
 
-build src/echo2/echo2@exe/Server.cpp.o: cpp_COMPILER ../src/echo2/Server.cpp
- DEPFILE = src/echo2/echo2@exe/Server.cpp.o.d
+build src/echo2/echo2@exe/server.cpp.o: cpp_COMPILER ../src/echo2/server.cpp
+ DEPFILE = src/echo2/echo2@exe/server.cpp.o.d
  ARGS = -Isrc/echo2/echo2@exe -Isrc/echo2 -I../src/echo2 -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O0 -g
 
-build src/echo2/echo2: cpp_LINKER src/echo2/echo2@exe/Server.cpp.o
+build src/echo2/echo2: cpp_LINKER src/echo2/echo2@exe/server.cpp.o
  LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed
 
 build src/client/client@exe/client.cpp.o: cpp_COMPILER ../src/client/client.cpp
